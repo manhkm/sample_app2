@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'shared/_error_messages'
+
+  resources :users
   get "users/new"
 
   root  'static_pages#home'
